@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife & Camp Gallery | Masai Mara</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: #121315; color: #f4f5f7; padding: 20px 5%; display: flex; flex-direction: column; align-items: center; }
+        
+        /* Branded Corporate Header Layout */
+        .brand-header { display: flex; align-items: center; gap: 15px; width: 100%; max-width: 650px; margin-bottom: 25px; background: #1a1c1e; padding: 15px; border-radius: 12px; border: 1px solid #2d3139; }
+        .brand-logo { width: 55px; height: 55px; object-fit: contain; border-radius: 6px; }
+        .brand-text-group { display: flex; flex-direction: column; }
+        .brand-title { font-size: 20px; color: #ff9f43; font-weight: bold; letter-spacing: 0.5px; }
+        .brand-tagline { font-size: 12px; color: #8a929e; }
+
+        .action-bar { display: flex; gap: 10px; width: 100%; max-width: 650px; margin-bottom: 25px; overflow-x: auto; padding-bottom: 5px; }
+        .action-btn { background: #1e2024; border: 1px solid #3a3f47; color: #f4f5f7; padding: 10px 18px; border-radius: 20px; font-size: 14px; text-decoration: none; }
+        .action-btn:hover { background: #26292e; border-color: #ff9f43; }
+        
+        .content-container { background: #1a1c1e; border: 1px solid #2d3139; border-radius: 12px; width: 100%; max-width: 650px; padding: 30px; box-shadow: 0 6px 12px rgba(0,0,0,0.3); }
+        h1 { color: #ff9f43; margin-bottom: 15px; font-weight: 500; font-size: 26px; }
+        .intro-text { color: #cbd2dc; line-height: 1.6; margin-bottom: 25px; font-size: 15px; }
+        
+        /* Modern 2-Column Responsive Image Grid Grid */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 10px; }
+        
+        /* Individual Image Wrapper Module Card Layout */
+        .gallery-card { background: #22252a; border: 1px solid #3a3f47; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: transform 0.2s; }
+        .gallery-card:hover { transform: scale(1.02); border-color: #ff9f43; }
+        
+        .gallery-img { width: 100%; height: 200px; object-fit: cover; display: block; }
+        .gallery-caption { padding: 12px; font-size: 13px; color: #cbd2dc; font-weight: 500; border-top: 1px solid #3a3f47; background: #1e2024; }
+        .category-tag { font-size: 10px; color: #ff9f43; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+
+    <!-- Branded Header matching other company sub-pages -->
+    <div class="brand-header">
+        <img src="logo.png" alt="Company Logo" class="brand-logo" onerror="this.src='logo.jpg';">
+        <div class="brand-text-group">
+            <span class="brand-title">MASAI MARA SAFARI BOOKINGS</span>
+            <span class="brand-tagline">Premium Wild Kenya Expeditions & Luxury Game Drives</span>
+        </div>
+    </div>
+
+    <!-- Navigation Hub Bar Menu -->
+    <div class="action-bar">
+        <a href="index.html" class="action-btn">🦁 Safari Hub</a>
+        <a href="services.html" class="action-btn">🛩️ Tour Packages</a>
+        <a href="gallery.html" class="action-btn" style="border-color: #ff9f43; background: #26292e;">📸 Gallery</a>
+        <a href="about.html" class="action-btn">🦁 About Us</a>
+        <a href="testimonials.html" class="action-btn">⭐ Reviews</a>
+        <a href="contact.html" class="action-btn">📅 Book Now</a>
+    </div>
+
+    <div class="content-container">
+        <h1>Experiential Media Showcase</h1>
+        <p class="intro-text">Browse real captures from our active savanna tracking drives, big cat encounters, and premium boutique eco-accommodation settings.</p>
+        
+        <div class="gallery-grid">
+
+            <!-- Card 1: Cruiser Pic (Using your existing photo) -->
+            <div class="gallery-card">
+                <img src="cruseir.jpg" alt="Safari Cruiser" class="gallery-img">
+                <div class="gallery-caption">
+                    <span class="category-tag">Fleet</span>
+                    Custom 4x4 open-roof safari land cruiser out on tracking loops.
+                </div>
+            </div>
+
+            <!-- Card 2: Balloon Pic (Using your existing photo) -->
+            <div class="gallery-card">
+                <img src="balloon1.jpg" alt="Hot Air Balloon" class="gallery-img">
+                <div class="gallery-caption">
+                    <span class="category-tag">Expeditions</span>
+                    Sunrise hot air balloon flight tracking wildlife from above.
+                </div>
+            </div>
+
+            <!-- Card 3: New Wildlife Photo Slot -->
+            <div class="gallery-card">
+                <img src="images (5).jpg" alt="Masai Mara Lion" class="gallery-img" onerror="this.src='balloon.jpg';">
+                <div class="gallery-caption">
+                    <span class="category-tag">Wildlife</span>
+                    Close-up predator tracking along dense savanna river borders.
+                </div>
+            </div>
+
+            <!-- Card 4: New Camp Photo Slot -->
+            <div class="gallery-card">
+                <img src="camp1.jpg" alt="Luxury Camp Lodge" class="gallery-img" onerror="this.src='tent.jpg';">
+                <div class="gallery-caption">
+                    <span class="category-tag">Accommodation</span>
+                    Boutique luxury canvas tents outfitted with five-star amenities.
+                </div>
+            </div>
+
+            <!-- Card 5: New Additional Animal Slot -->
+            <div class="gallery-card">
+                <img src="migration.jpg" alt="Great Migration Herd" class="gallery-img" onerror="this.src='balloon.jpg';">
+                <div class="gallery-caption">
+                    <span class="category-tag">Wildlife</span>
+                    Wildebeest migration columns passing the inner Mara plains.
+                </div>
+            </div>
+
+            <!-- Card 6: New Additional Camp View Slot -->
+            <div class="gallery-card">
+                <img src="dina.jpg" alt="Bush Fine Dining" class="gallery-img" onerror="this.src='cruiser.jpg';">
+                <div class="gallery-caption">
+                    <span class="category-tag">Accommodation</span>
+                    Private starlit candlelit fine dining setups inside campground perimeters.
+                </div>
+            </div>
+        
+            <!-- Card 7 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='2026080720260807images (9).jpg';">
+            </div> 
+            
+                <!-- Card 8 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='2026080720260807IMG-20260806-WA0029.jpg';">
+            </div>
+            
+                <!-- Card 9 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='2026080720260807images (21).jpg';">
+            </div>
+            
+                <!-- Card 10 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='2026080720260807Kenya-Maasai-nature- walking.jpg';">
+            </div>
+            
+                     
+                <!-- Card 11 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='2026080720260807images (23).jpg';">
+            </div>
+            
+                     
+                <!-- Card 12 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='2026080720260807images (22).jpg';">
+            </div>
+            
+                     
+                <!-- Card 13 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='gre.jpg';">
+            </div>
+ 
+               <!-- Card 14 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='2026080720260807IMG-20260806-WA0030.jpg';">
+            </div>
+        
+             <!-- Card 15 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='2026080720260807IMG-20260806-WA0028.jpg';">
+            </div>
+            
+                 <!-- Card 16 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='2026080720260807IMG-20260806-WA0034.jpg';">
+            </div>
+            
+                 <!-- Card 17 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='2026080720260807IMG-20260806-WA0029.jpg';">
+            </div>
+            
+                 <!-- Card 18 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='2026080720260807images (24).jpg';">
+            </div>
+            
+                      <!-- Card 19 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='file_000000004a7881f4b92e573f789d68be.jpg';">
+            </div>
+            
+                      <!-- Card 20 -->
+            <div class="gallery-card">
+                <img src="animal3.jpg" alt="Safari View" class="gallery-img pure-photo" onerror="this.src='2026080720260807images (25).jpg';">
+            </div>
+    
+
+</body>
+</html>

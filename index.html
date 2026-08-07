@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Mara Safari Bookings | Luxury Kenya Expeditions</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: #121315; color: #f4f5f7; padding: 20px 5%; display: flex; flex-direction: column; align-items: center; }
+
+
+        /* Top Booking Actions Bar */
+        .action-bar { display: flex; gap: 10px; width: 100%; max-width: 650px; margin-bottom: 25px; overflow-x: auto; padding-bottom: 5px; }
+        .action-btn { background: #1e2024; border: 1px solid #3a3f47; color: #f4f5f7; padding: 10px 18px; border-radius: 20px; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; font-weight: 500; }
+        .action-btn:hover { background: #26292e; border-color: #ff9f43; }
+
+
+        /* Premium Result Booking Cards */
+        .result-card { background: #1a1c1e; border: 1px solid #2d3139; border-radius: 14px; width: 100%; max-width: 650px; padding: 22px; margin-bottom: 20px; box-shadow: 0 6px 12px rgba(0,0,0,0.3); transition: all 0.25s ease; }
+        .result-card:hover { transform: translateY(-3px); border-color: #ff9f43; box-shadow: 0 8px 16px rgba(255, 159, 67, 0.15); }
+        
+        .source-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+        .source-icon { width: 30px; height: 30px; background: #26292e; border: 1px solid #3a3f47; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #ff9f43; }
+        .site-name { font-size: 14px; color: #ff9f43; font-weight: 600; letter-spacing: 0.5px; }
+        .site-url { font-size: 12px; color: #8a929e; }
+
+
+        /* Savanna Gold Highlights */
+        .card-title { font-size: 23px; color: #ff9f43; text-decoration: none; font-weight: 500; display: inline-block; margin-bottom: 10px; }
+        .card-title:hover { text-decoration: underline; color: #ffa952; }
+
+
+        .card-snippet { font-size: 14px; color: #cbd2dc; line-height: 1.6; }
+        
+        .badge { background: #26292e; color: #ff9f43; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; margin-left: auto; border: 1px solid #3a3f47; }
+    </style>
+</head>
+<body>
+
+
+    <!-- Top Quick Action Anchors -->
+    <div class="action-bar">
+        <a href="index.html" class="action-btn" style="border-color: #ff9f43; background: #26292e;">🦁 Safari Hub</a>
+        <a href="services.html" class="action-btn">🛩️ Tour Packages</a>
+        <a href="contact.html" class="action-btn">📅 Book Now</a>
+        
+        
+    </div>
+
+
+    <!-- Booking Card 1: Points to services.html -->
+    <div class="result-card">
+        <div class="source-meta">
+            <div class="source-icon">🐆</div>
+            <div class="source-links">
+                <span class="site-name">Masai Mara Safari </span>
+                <div class="site-url">mara-safari://packages</div>
+            </div>
+            <span class="badge">POPULAR</span>
+        </div>
+        <a href="services.html" class="card-title">All-Inclusive Luxury Safari Packages</a>
+        <p class="card-snippet">Explore our premium 3-Day and 5-Day Masai Mara game drives. Packages include 4x4 open-roof cruiser transport, luxury eco-lodge accommodation, professional tour guides, and park entry tickets.</p>
+    </div>
+
+
+    <!-- Booking Card 2: Points to contact.html -->
+    <div class="result-card">
+        <div class="source-meta">
+            <div class="source-icon">🐘</div>
+            <div class="source-links">
+                <span class="site-name">Reservations Desk</span>
+                <div class="site-url">mara-safari://bookings</div>
+            </div>
+        </div>
+        <a href="contact.html" class="card-title">Tailor-Made & Group Booking Requests</a>
+        <p class="card-snippet">Planning a honeymoon, family vacation, or photographic group expedition? Click here to fill out your booking itinerary, choose custom dates, and speak directly with our Nairobi booking office.</p>
+    </div>
+
+
+</body>
+</html>

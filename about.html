@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Masai Mara Safari Bookings</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: #121315; color: #f4f5f7; padding: 20px 5%; display: flex; flex-direction: column; align-items: center; }
+        
+        /* Branded Corporate Header Layout */
+        .brand-header { display: flex; align-items: center; gap: 15px; width: 100%; max-width: 650px; margin-bottom: 25px; background: #1a1c1e; padding: 15px; border-radius: 12px; border: 1px solid #2d3139; }
+        .brand-logo { width: 55px; height: 55px; object-fit: contain; border-radius: 6px; }
+        .brand-text-group { display: flex; flex-direction: column; }
+        .brand-title { font-size: 20px; color: #ff9f43; font-weight: bold; letter-spacing: 0.5px; }
+        .brand-tagline { font-size: 12px; color: #8a929e; }
+
+        .action-bar { display: flex; gap: 10px; width: 100%; max-width: 650px; margin-bottom: 25px; overflow-x: auto; padding-bottom: 5px; }
+        .action-btn { background: #1e2024; border: 1px solid #3a3f47; color: #f4f5f7; padding: 10px 18px; border-radius: 20px; font-size: 14px; text-decoration: none; }
+        .action-btn:hover { background: #26292e; border-color: #ff9f43; }
+        
+        .content-container { background: #1a1c1e; border: 1px solid #2d3139; border-radius: 12px; width: 100%; max-width: 650px; padding: 30px; box-shadow: 0 6px 12px rgba(0,0,0,0.3); }
+        h1 { color: #ff9f43; margin-bottom: 15px; font-weight: 500; font-size: 26px; }
+        p { color: #cbd2dc; line-height: 1.6; margin-bottom: 20px; font-size: 15px; }
+        
+        /* Section Sub-headings */
+        .about-section { border-left: 3px solid #ff9f43; padding-left: 15px; margin-bottom: 30px; }
+        .about-section h3 { color: #f4f5f7; margin-bottom: 8px; font-size: 19px; font-weight: 600; }
+        .about-section p { font-size: 14px; margin-bottom: 0; }
+        
+        .highlight-box { background: #22252a; border: 1px solid #3a3f47; padding: 15px; border-radius: 8px; margin-top: 15px; display: flex; justify-content: space-around; text-align: center; }
+        .stat-item { display: flex; flex-direction: column; }
+        .stat-num { color: #ff9f43; font-size: 22px; font-weight: bold; }
+        .stat-lbl { color: #8a929e; font-size: 11px; text-transform: uppercase; margin-top: 20px; letter-spacing: 0.5px; }
+    </style>
+</head>
+<body>
+
+    <!-- Standard Client Branded Header Block -->
+    <div class="brand-header">
+        <img src="logo.png" alt="Company Logo" class="brand-logo" onerror="this.src='logo.jpg';">
+        <div class="brand-text-group">
+            <span class="brand-title">MASAI MARA SAFARI BOOKINGS</span>
+            <span class="brand-tagline">Premium Wild Kenya Expeditions & Luxury Game Drives</span>
+        </div>
+    </div>
+
+    <!-- Navigation Hub Bar Menu Tabs -->
+    <div class="action-bar">
+        <a href="index.html" class="action-btn">🦁 Safari Hub</a>
+        <a href="services.html" class="action-btn">🛩️ Tour Packages</a>
+        <a href="gallery.html" class="action-btn">📸 Gallery</a>
+        <a href="about.html" class="action-btn" style="border-color: #ff9f43; background: #26292e;">🦁 About Us</a>
+        <a href="testimonials.html" class="action-btn">⭐ Reviews</a>
+        <a href="contact.html" class="action-btn">📅 Book Now</a>
+    </div>
+
+    <div class="content-container">
+        <h1>Who We Are</h1>
+        <p>Based in Nairobi, Kenya, Masai Mara Safari Bookings is a premier licensed tour operator dedicated to crafting unforgettable luxury adventures across East Africa's most iconic game reserve. We merge absolute comfort with raw wilderness tracking.</p>
+        
+        <!-- Section 1: The Fleet -->
+        <div class="about-section">
+            <h3>Our Premium Custom Fleet</h3>
+            <p>We own and maintain a fleet of custom-built 4x4 open-roof safari land cruisers. Every vehicle is specifically engineered for rough savanna terrain, outfitted with heavy-duty off-road suspension, custom camera beanbag stability mounts, internal device charging sockets, and a built-in cooler box to keep your bush drinks perfectly chilled.</p>
+        </div>
+
+        <!-- Section 2: The Guides -->
+        <div class="about-section">
+            <h3>KPSGA Certified Tour Guides</h3>
+            <p>Our expert driver-guides are lifelong wilderness trackers native to the region. Every team member holds active professional Bronze or Silver certifications from the Kenya Professional Safari Guides Association (KPSGA). They possess deep knowledge of animal behavior patterns, migration timelines, bird taxonomy, and local cultural heritage tracking protocols.</p>
+        </div>
+
+        <!-- Section 3: Core Mission -->
+        <div class="about-section">
+            <h3>Sustainable Eco-Tourism</h3>
+            <p>We partner strictly with eco-certified luxury tented camps and boutique bush lodges that give back directly to the local community. Our game drives strictly follow wildlife protection regulations, ensuring that our presence preserves the natural habitats of the Big Five for generations to come.</p>
+        </div>
+
+        <!-- Corporate Trust Stats Module Block -->
+        <div class="highlight-box">
+            <div class="stat-item"><span class="stat-num">12+</span><span class="stat-lbl">Years Track</span></div>
+            <div class="stat-item"><span class="stat-num">4,500+</span><span class="stat-lbl">Happy Guests</span></div>
+            <div class="stat-item"><span class="stat-num">100%</span><span class="stat-lbl">Local Guides</span></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
